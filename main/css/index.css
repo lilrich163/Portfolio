@@ -14,9 +14,14 @@
 
 /* navbar */
 
-html, body {
+html {
     background-color: #000;
+}
+
+body {
     padding: 15px;
+    transition: all;
+    transition-duration: 0.5s;
 }
 
 nav.navbar {
@@ -80,7 +85,7 @@ nav.navbar ul li a:hover {
     align-items: start;
     justify-content: left;
     z-index: 1;
-    transition-property: transform;
+    transition: all 1s ease-in-out .2s;
     transition-duration: 1s;
 }
 
@@ -107,18 +112,9 @@ nav.navbar ul li a:hover {
     box-shadow: 0 2px 4px 1px #fff;
 }
 
-img.vector-img-second {
-    transform: scale(0.3);
-    opacity: 0.6;
-    border-radius: 40px;
-    rotate: 45deg;
-    position: absolute;
-    bottom: -250px;
-    left: 60px;
-    z-index: -1;
-}
 
-nav .vector-img {
+
+nav .vector-img-1 {
     transform: scale(0.3);
     opacity: 0.4;
     border-radius: 40px;
@@ -126,7 +122,118 @@ nav .vector-img {
     position: absolute;
     bottom: 250px;
     right: 0px;
-    z-index: 0;
+    z-index: auto;
+}
+
+
+
+
+nav .vector-img-3 {
+    transform: scale(0.3);
+    opacity: 0.4;
+    border-radius: 40px;
+    rotate: 135deg;
+    position: absolute;
+    bottom: -200px;
+    right: 560px;
+    z-index: auto;
 }
 
 /* end main image */
+
+/* second image */
+
+.second-image {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    transition: all 1s ease-in-out .2s;
+    z-index: 1;
+}
+
+.second-image:hover {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.second-image p{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    color: #fff;
+    font-size: 1.4em;
+    border-right: solid 2px #fff;   
+    z-index: 1;
+}
+
+.second-image p:hover{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    color: #fff;
+    font-size: 1.4em;
+    border-right: solid 2px #fff;   
+    z-index: 1;
+    
+}
+
+.second-image img.main-img {
+    border-radius: 5px 35px 5px 35px;
+    box-shadow: 0 2px 4px 1px #fff;
+    order: 2;
+    z-index: 1;
+}
+
+img.vector-img-second {
+    transform: scale(0.3);
+    opacity: 0.6;
+    border-radius: 40px;
+    rotate: 45deg;
+    position: absolute;
+    bottom: 250px;
+    left: 60px;
+}
+
+/* end second image */
+
+.footer .vector-img-2 {
+    transform: scale(0.3);
+    opacity: 0.4;
+    border-radius: 40px;
+    rotate: 45deg;
+    position: absolute;
+    bottom: -700px;
+    right: 1000px;
+    z-index: auto;
+}
+
+.footer {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: auto;
+    border-top: 1px solid #fff;
+}
+
+
+.footer-images {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    width: 50px;
+    margin: 15px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.footer-images:hover {
+    width: 50px;
+    margin: 15px;
+    transform: scale(1.3);
+
+}
+
